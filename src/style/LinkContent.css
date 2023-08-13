@@ -1,0 +1,40 @@
+.content-item {
+    height: 90px;
+    width: 85%;
+    margin: 25px auto;
+    cursor: pointer;
+    position: relative;
+    border: #4477cea2 solid 2px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.content-item .image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 80%;
+    width: 85%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.image-back{
+    width: 30%;
+    height: 100%;
+    background-color: #4477cea2;
+    right: 0px;
+    position: absolute;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    animation: rotate 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+    100%{
+        transform: rotateZ(360deg);
+    }
+    
+}
